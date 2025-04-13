@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>23BCE1837</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 50%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        textarea {
+            resize: none;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        input[type="button"],
+        input[type="reset"] {
+            width: 45%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="reset"] {
+            background-color: #f44336;
+            color: white;
+        }
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+        input[type="reset"]:hover {
+            background-color: #e53935;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+            <label for="name">Username*</label>
+            <input type="text" id="name" name="name" placeholder="Enter your username">
+            <label for="pass">Password*</label>
+            <input type="password" id="pass" name="pass" placeholder="Enter your password">
+        </fieldset>
+        <fieldset>
+            <legend>Gender*</legend>
+            <input type="radio" id="male" name="gender" value="male">Male
+            <input type="radio" id="female" name="gender" value="female">Female
+        </fieldset>
+        <fieldset>
+            <legend>Programming Skill</legend>
+            <input type="checkbox" id="java" name="skill" value="java">Java
+            <input type="checkbox" id="c++" name="skill" value="c++">C++
+            <input type="checkbox" id="c#" name="skill" value="c#">C#
+        </fieldset>
+        <fieldset>
+            <legend>Fruit</legend>
+            <select id="fruit" name="fruit">
+                <option value="" disabled selected>Select your favorite fruit</option>
+                <optgroup label="Pome">
+                    <option value="apple">Apples</option>
+                    <option value="pear">Pears</option>
+                </optgroup>
+                <optgroup label="Citrus">
+                    <option value="orange">Oranges</option>
+                    <option value="grapefruit">Grapefruits</option>
+                    <option value="mandarin">Mandarins</option>
+                    <option value="lime">Limes</option>
+                </optgroup>
+                <optgroup label="Stone">
+                    <option value="nectarine">Nectarines</option>
+                    <option value="peach">Peaches</option>
+                    <option value="plum">Plums</option>
+                </optgroup>
+                <optgroup label="Exotic">
+                    <option value="banana">Bananas</option>
+                    <option value="mango">Mangoes</option>
+                </optgroup>
+                <optgroup label="Berry">
+                    <option value="strawberry">Strawberries</option>
+                    <option value="raspberry">Raspberries</option>
+                    <option value="blueberry">Blueberries</option>
+                    <option value="kiwi">Kiwifruit</option>
+                    <option value="passionfruit">Passionfruit</option>
+                </optgroup>
+                <optgroup label="Melon">
+                    <option value="watermelon">Watermelon</option>
+                    <option value="rockmelon">Rock-Melons</option>
+                    <option value="honeydew">Honeydew Melons</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <textarea name="comment" id="comment" placeholder="Enter your comment here" rows="4"></textarea>
+        <div class="button-container">
+            <input type="button" value="Send">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>
